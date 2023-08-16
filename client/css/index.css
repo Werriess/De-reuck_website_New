@@ -1,0 +1,43 @@
+:root {
+    --fontFam: Inter;
+}
+
+#logo {
+    background-color: black;
+    color: white;
+    padding-right: 1vh;
+    padding-left: 1vh;
+}
+
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+  .centered p {
+    color: #FFF;
+    text-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    font-size: 3.5vh;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+    font-family: var(--fontFam);
+  }
+  
+  .nav-item :hover {
+    text-decoration: underline;
+  }
+  
+  
+  
