@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Montserrat:wght@100;400;900&display=swap" rel="stylesheet">
+    <script src="/De-reuck_website_New/client/js/index.js"></script>
 
     <title>KDR Solutions</title>
   </head>
@@ -26,8 +27,8 @@
                   
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class=" navbar-nav ml-auto">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/De-reuck_website_New/client/html/index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#">Services</a>
@@ -43,7 +44,7 @@
                             <a class="dropdown-item" href="#">Something else here</a>
                           </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                           <a class="nav-link" href="#">Contact us</a>
                         </li>
                       </ul>
@@ -52,10 +53,56 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <img src="/De-reuck_website_New/client/assets/KDR beisghied 2.jpg" alt="">
+    <div class="container-fluid" id="image">
+      <div class="row">
+          <div class="col">
+            <form action="https://formspree.io/f/mdorewby"
+            method="POST" id="myForm">
+            <div class="row">
+              <div class="col-12">
+                <H2>Get in touch:</H2>
+              </div>
             </div>
-        </div>
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="First name"  id="valueOne" minlength="5" maxlength="50" required>
+                </div>
+                <div id="nameError"></div><br>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
+                <div id="nameError"></div><br>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Email">
+                </div>
+                <div class="col">
+                  <input type="tel" class="form-control" placeholder="Cell Phone">
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col">
+                  <textarea name="Message" class="form-control" rows="6" placeholder="Leave us a message:"></textarea>
+                  <br>
+                  <div>
+                    <input type="submit" value="Send" class="button">
+                    <input class="button" type="reset" value="Reset">
+                </div>
+                </div>
+              </div>
+            </form>
+          </div>
+      </div>
+     
+    </div>
+
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  </body>
+</html>
        

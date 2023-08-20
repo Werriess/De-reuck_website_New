@@ -38,9 +38,50 @@
   .nav-item :hover {
     text-decoration: underline;
   }
+
   
- img {
-  width:100%;
+#image {
+  background-image: url("/De-reuck_website_New/client/assets/KDR\ beisghied\ 2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale();
+}
+
+.home {
+  background-image: url("/De-reuck_website_New/client/assets/image-2500x1600.jpg");
+  max-width: 100%;
+  height: 80%;
   height: auto;
- }
-  
+  background-color: red;
+}
+
+#images {
+  background-image: url("/De-reuck_website_New/client/assets/image-1600x900.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered {
+    color: #FFF;
+    text-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    font-size: 8vh;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+    font-family: var(--fontFam);
+}
+
+#myForm {
+  background-color: lightslategray;
+  padding: 1.5rem;
+}

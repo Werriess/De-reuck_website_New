@@ -1,4 +1,5 @@
-const userName = document.querySelector('#valueOne');
+const userFName = document.querySelector('#valueOne');
+const userLName = document.querySelector('#valueT');
 const userEmail = document.querySelector('#valueTwo');
 const userCell = document.querySelector('#valueThree');
 const toets = document.querySelector('#toets');
@@ -7,6 +8,7 @@ const nameError = document.querySelector('#nameError');
 const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
 const cellRegex = /^0\d{9}$/
 
+testScript();
 //this is used to display values in a summary back to the user
 function showVal(event) {
     event.preventDefault(); // Prevent default form submission
@@ -16,7 +18,7 @@ function showVal(event) {
 
 function validateName() {
 
-    if (userName.validity.tooShort) {
+    if (userFName.validity.tooShort) {
         nameError.innerHTML = 'Full name must be at least 5 characters!';
         nameError.style.color = 'red';
         nameError.style.fontSize = '0.7rem';
@@ -26,7 +28,7 @@ function validateName() {
     }
 }
 
-userName.addEventListener('blur',validateName);
+userFName.addEventListener('blur',validateName);
 
 
 function validateEmail() {
@@ -55,5 +57,10 @@ function validateCell() {
 userCell.addEventListener('blur',validateCell)
 
 
+function testScript() {
+    console.log("JavaScript is connected!");
+}
 
+// Rest of your JavaScript code
 
+// Call the test function
