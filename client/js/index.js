@@ -4,7 +4,7 @@ const userEmail = document.querySelector('#valueTwo');
 const userCell = document.querySelector('#valueThree');
 const toets = document.querySelector('#toets');
 const nameFError = document.querySelector('#fnameError');
-const nameLError = document.querySelector('#lnameError');
+const nameLError = document.querySelector('#lnameError')
 const emailError = document.querySelector('#enameError');
 const cellError = document.querySelector('#cnameError');
 
@@ -12,11 +12,7 @@ const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
 const cellRegex = /^0\d{9}$/
 
 testScript();
-//this is used to display values in a summary back to the user
-function showVal(event) {
-    event.preventDefault(); // Prevent default form submission
 
-}
 
 
 function validateFName() {
@@ -27,7 +23,7 @@ function validateFName() {
         nameFError.style.fontSize = '0.7rem';
         
     } else {
-        nameFError.innerHTML = ''; // Clear the error message
+        nameFError.innerHTML = ''; 
     }
 }
 
@@ -41,7 +37,7 @@ function validateLName() {
         nameLError.style.fontSize = '0.7rem';
         
     } else {
-        nameLError.innerHTML = ''; // Clear the error message
+        nameLError.innerHTML = ''; 
     }
 }
 
@@ -54,7 +50,7 @@ function validateEmail() {
         emailError.style.color = 'red';
         emailError.style.fontSize = '0.7rem';
     } else {
-        emailError.textContent = ''; // Clear the error message
+        emailError.textContent = ''; 
     }
 }
 
@@ -66,7 +62,7 @@ function validateCell() {
         cellError.style.color = 'red';
         cellError.style.fontSize = '0.7rem';
     } else {
-        cellError.textContent = ''; // Clear the error message
+        cellError.textContent = ''; 
     }
 }
 
