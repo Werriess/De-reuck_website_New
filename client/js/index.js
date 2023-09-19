@@ -21,6 +21,7 @@ function validateFName() {
         nameFError.innerHTML = 'First name must be at least 5 characters!';
         nameFError.style.color = 'red';
         nameFError.style.fontSize = '0.7rem';
+        userFName.style.borderColor = 'red'
         
     } else {
         nameFError.innerHTML = ''; 
@@ -35,6 +36,7 @@ function validateLName() {
         nameLError.innerHTML = 'Last name must be at least 5 characters!';
         nameLError.style.color = 'red';
         nameLError.style.fontSize = '0.7rem';
+        userLName.style.borderColor = 'red'
         
     } else {
         nameLError.innerHTML = ''; 
@@ -49,6 +51,7 @@ function validateEmail() {
         emailError.textContent = 'Please enter a valid email address';
         emailError.style.color = 'red';
         emailError.style.fontSize = '0.7rem';
+        userEmail.style.borderColor = 'red'
     } else {
         emailError.textContent = ''; 
     }
@@ -61,8 +64,11 @@ function validateCell() {
         cellError.textContent = 'Please enter a valid cell phone number';
         cellError.style.color = 'red';
         cellError.style.fontSize = '0.7rem';
+        userCell.style.borderColor = 'red';
+
     } else {
         cellError.textContent = ''; 
+        
     }
 }
 

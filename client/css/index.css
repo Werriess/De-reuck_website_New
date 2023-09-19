@@ -41,7 +41,7 @@
 
   
 #image {
-  background-image: url("/De-reuck_website_New/client/assets/KDR\ beisghied\ 2.jpg");
+  background-image: url("/De-reuck_website_New/client/assets/output-onlinejpgtools.jpg");
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -49,7 +49,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: grayscale();
+  
 }
 
 .home {
@@ -61,7 +61,7 @@
 }
 
 #images {
-  background-image: url("/De-reuck_website_New/client/assets/image-1600x900.jpg");
+  background-image: url("/De-reuck_website_New/client/assets/accounting-_-bsacc.jpg");
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -69,6 +69,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  filter: grayscale(80%);
+  
+  
 }
 
 .centered {
@@ -82,17 +85,19 @@
 }
 
 #myForm {
-  background-color: darkslategrey;
+  background-color: rgb(107, 108, 108);
   padding: 1.5rem;
 }
 
 #servicesR {
-  background-color: grey;
+  background-image: url("/De-reuck_website_New/client/assets/KDR\ besigheid\ 7.jpg");
+  background-repeat: no-repeat;
+  filter: grayscale();
   padding: 5rem;
 }
 
-#servicesC {
-  background-color: white;
+.servicesC {
+ border-radius: 2rem;
   
 }
 
@@ -113,3 +118,15 @@
   margin-top: 2rem;
 }
 
+#fBook {
+  text-decoration: none;
+  color: black;
+  font-size: 4rem;
+  padding-right: 2rem;
+}
+
+#linkedIn {
+  text-decoration: none;
+  color: black;
+  font-size: 4rem;
+}
