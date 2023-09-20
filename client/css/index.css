@@ -85,8 +85,10 @@
 }
 
 #myForm {
-  background-color: rgb(107, 108, 108);
+  background-color: rgb(84, 84, 84);
   padding: 1.5rem;
+  border-radius: 2rem;
+  opacity: 0.99;
 }
 
 #servicesR {
@@ -110,7 +112,7 @@
   border-radius: 1rem;
   margin-top: 5rem;
   margin-bottom: 10rem;
-  padding: 4rem;
+  padding: 2rem;
   font-size: large;
 }
 
@@ -118,15 +120,46 @@
   margin-top: 2rem;
 }
 
-#fBook {
+.fBook {
   text-decoration: none;
   color: black;
   font-size: 4rem;
   padding-right: 2rem;
 }
 
-#linkedIn {
+.linkedIn {
   text-decoration: none;
   color: black;
   font-size: 4rem;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: xx-small;
+  padding-top: 2rem;
+  
+}
+
+.myIcons {
+  margin-right: 1rem;
+}
+
+.socialMedia {
+  float: left;
+}
+
+.socialMedia:hover {
+  color: white;
+}
+
+.services {
+  padding-top: 15rem;
 }

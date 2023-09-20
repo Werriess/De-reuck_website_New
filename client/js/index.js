@@ -18,13 +18,14 @@ testScript();
 function validateFName() {
 
     if (userFName.validity.tooShort) {
-        nameFError.innerHTML = 'First name must be at least 5 characters!';
+        nameFError.innerHTML = 'Invalid name';
         nameFError.style.color = 'red';
         nameFError.style.fontSize = '0.7rem';
         userFName.style.borderColor = 'red'
         
     } else {
-        nameFError.innerHTML = ''; 
+        nameFError.innerHTML = '';  
+        userFName.style.borderColor = 'green'	
     }
 }
 
@@ -33,13 +34,14 @@ userFName.addEventListener('blur',validateFName);
 function validateLName() {
 
     if (userLName.validity.tooShort) {
-        nameLError.innerHTML = 'Last name must be at least 5 characters!';
+        nameLError.innerHTML = 'Invalid surname';
         nameLError.style.color = 'red';
         nameLError.style.fontSize = '0.7rem';
         userLName.style.borderColor = 'red'
         
     } else {
         nameLError.innerHTML = ''; 
+        userLName.style.borderColor = 'green';
     }
 }
 
@@ -53,7 +55,8 @@ function validateEmail() {
         emailError.style.fontSize = '0.7rem';
         userEmail.style.borderColor = 'red'
     } else {
-        emailError.textContent = ''; 
+        emailError.textContent = '';
+        userEmail.style.borderColor = 'green'; 
     }
 }
 
@@ -68,6 +71,7 @@ function validateCell() {
 
     } else {
         cellError.textContent = ''; 
+        userCell.style.borderColor = 'green';
         
     }
 }
